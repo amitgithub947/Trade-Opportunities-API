@@ -3,8 +3,8 @@ from urllib.parse import quote_plus
 
 import httpx
 
-from app.config import settings
-from app.models import NewsItem
+from config import settings
+from models import NewsItem
 
 
 async def collect_market_data(sector: str, max_items: int = 8) -> list[NewsItem]:

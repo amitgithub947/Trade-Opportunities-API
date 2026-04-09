@@ -3,8 +3,8 @@ import logging
 
 from google import genai
 
-from app.config import settings
-from app.models import NewsItem
+from config import settings
+from models import NewsItem
 
 
 logger = logging.getLogger(__name__)

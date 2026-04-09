@@ -7,7 +7,7 @@ from typing import Deque
 
 from fastapi import Depends, Header, HTTPException, Request, status
 
-from app.config import settings
+from config import settings
 
 
 class InMemoryRateLimiter:

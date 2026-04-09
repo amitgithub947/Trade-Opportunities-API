@@ -5,10 +5,10 @@ import httpx
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse
 
-from app.config import settings
-from app.security import AuthDependency, RateLimitDependency, validate_sector_name
-from app.services.ai_analyzer import generate_markdown_report
-from app.services.data_collector import collect_market_data
+from config import settings
+from security import AuthDependency, RateLimitDependency, validate_sector_name
+from services.ai_analyzer import generate_markdown_report
+from services.data_collector import collect_market_data
 
 
 logging.basicConfig(level=logging.INFO)
